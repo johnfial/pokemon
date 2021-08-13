@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework',
-    'corsheaders',  # CORS
+    'rest_framework',  # pip install djangorestframework @ https://pypi.org/project/djangorestframework/
+    'corsheaders',  # CORS # pip install django-cors-headers @ https://pypi.org/project/django-cors-headers/
 
     'api_app.apps.ApiAppConfig',
     'pokemon.apps.PokemonConfig',
