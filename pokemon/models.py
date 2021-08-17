@@ -14,7 +14,7 @@ class Pokemon(models.Model):
     # types = the set of Types associated with that Pokemon
 
     def __str__(self):
-        return self.name
+        return self.name 
     
     # # just for fun, FAILED ATTEMPT to add the density field here, ~10-min and switching to doing it in the views.py or serializers.py
     # density = models.FloatField(default=(weight)/(height))

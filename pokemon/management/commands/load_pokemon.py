@@ -18,25 +18,25 @@ class Command(BaseCommand):
         
         # Loop through Pokemon to add to DB
         for pokemon in pokemon_list['pokemon']:
-            print(pokemon)
+            # print(pokemon)
 
             # Convert units to m and kg
             pokemon['height'] /= 10
             pokemon['weight'] /= 10
 
             # Add Pokemon to DB
-            # poke_obj = Pokemon.objects.create(
-            #     number=pokemon['number'],
-            #     name=pokemon['name'],
-            #     height=pokemon['height'],
-            #     weight=pokemon['weight'],
-            #     image_front=pokemon['image_front'],
-            #     image_back=pokemon['image_back']
-            # )
+            poke_obj = Pokemon.objects.create(
+                number=pokemon['number'],
+                name=pokemon['name'],
+                height=pokemon['height'],
+                weight=pokemon['weight'],
+                image_front=pokemon['image_front'],
+                image_back=pokemon['image_back']
+            )
 
             # Loop through types list
             # For each type, create type if it doesn't exist yet, than add that type to current Pokemon
             for type in pokemon['types']:
                 type_obj, created = Type.objects.get_or_create(type=type)
-                # type_obj.pokemon.add(poke_obj)
-                print(type)
+                type_obj.pokemon.add(poke_obj)
+                # print(type)
