@@ -56,3 +56,14 @@ new Vue({
         this.populate_pokemon()
     }, // end Vue mounted, which executes on full JS page load
 }) // end Vue
+
+
+// 2 Add methods
+//     api post new list
+//     api delete pokemon
+//     api modify existing pokemon
+//         django detail page
+//             try an IF existing field modified, only send it to API if it's different, that would be ideal for scalability...
+// HTML:
+// 3. for loop 
+// 4 display all elements of pokemon

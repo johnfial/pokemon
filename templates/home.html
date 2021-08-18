@@ -44,7 +44,7 @@ TODO:
                     <!-- <li>density: [[pokemon.density ]] </li> -->
                     <li>Density : [[ pokemon.weight / pokemon.height ]] </li>
                     
-                    <!-- TEMPORARILY COMMENTED OUT FOR QUICKER PAGE LOADING -->
+                <!-- TEMPORARILY COMMENTED OUT FOR QUICKER PAGE LOADING: -->
                     <!-- <img :src="[[ pokemon.image_front ]]" > -->
                     <!-- <img :src="[[ pokemon.image_back ]]" > -->
 
@@ -66,24 +66,3 @@ TODO:
 <!-- add the vue_app.js file... -->
 <link rel="stylesheet" href="{% static '/main.css' %}">
 <script src="{% static '/vue_app.js' %}"></script>
-    
-    {% comment %} 
-    1. create Vue app
-    2 Add methods
-        api pull pokemon list
-        api post new list
-        api delete pokemon
-        api modify existing pokemon
-            django detail page
-                try an IF existing field modified, only send it to API if it's different, that would be ideal for scalability...
-    HTML:
-    3. for loop 
-    4 display all elements of pokemon
-
- {% endcomment %}
-
-{% comment %} TODO  {% endcomment %}
-{% comment %} create vue app {% endcomment %}
-{% comment %} add methods {% endcomment %}
-{% comment %}  {% endcomment %}
-{% comment %} for loop {% endcomment %}
